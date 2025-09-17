@@ -22,3 +22,14 @@ function muestra_potencia() {
     var num= 2* Math.pow(10, -9);
     console.log("el resultado es" + num);
 }
+
+function muestra_n_distintas_bases(num) {
+    var numBinario = num.toString(2);
+    var numDecimal = num.toString(10);
+    var numOctal = num.toString(8);
+    var numHexadecimal = num.toString(16);
+    console.log("Número en binario: " + numBinario);
+    console.log("Número en decimal: " + numDecimal);
+    console.log("Número en octal: " + numOctal);
+    console.log("Número en hexadecimal: " + numHexadecimal);
+}
