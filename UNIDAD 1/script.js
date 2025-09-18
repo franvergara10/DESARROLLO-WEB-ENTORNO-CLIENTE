@@ -33,3 +33,33 @@ function muestra_n_distintas_bases(num) {
     console.log("Número en octal: " + numOctal);
     console.log("Número en hexadecimal: " + numHexadecimal);
 }
+
+function divide_entre_cero_y_opera(num) {
+    var resultado = num / 0;
+    console.log("El resultado de dividir " + num + " entre cero es: " + resultado);
+    var suma = resultado + 5;
+    console.log("El resultado de sumar 5 al resultado anterior es: " + suma);
+}
+
+function check_ambito_var() {
+    let prueba = 5;
+    console.log("Valor de prueba: " + prueba);
+    {
+        let prueba2 = 10;
+        console.log("Insisto valor de prueba dentro del bloque: " + prueba);
+        console.log("Valor de prueba2 dentro del bloque: " + prueba2);
+    }
+    console.log("Valor de prueba2 fuera del bloque: " + prueba2);
+}
+
+function contar_y_temporizar() {
+    let valor = 0;
+    let inicio = new Date();
+    for (let i = 0; i < 100; i++) {
+        valor +=10;
+    }
+    let fin = new Date();
+    let tiempoTranscurrido = fin - inicio;
+    console.log("El valor final es: " + valor);
+    console.log("Tiempo transcurrido en milisegundos: " + tiempoTranscurrido);
+}
