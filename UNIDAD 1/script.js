@@ -63,3 +63,17 @@ function contar_y_temporizar() {
     console.log("El valor final es: " + valor);
     console.log("Tiempo transcurrido en milisegundos: " + tiempoTranscurrido);
 }
+
+function motrar_error() {
+    console.error("Error!. No se ha encontrado ningún valor.");
+}
+
+function pedir_nombre_usuario() {
+    let seguir = true; 
+
+    while (seguir) {
+    let nombre = prompt("Por favor, introduce tu nombre:");
+    console.log("Hola, " + nombre + "!");
+    seguir = confirm("¿Quieres continuar?");
+    }
+}
