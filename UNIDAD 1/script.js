@@ -77,3 +77,29 @@ function pedir_nombre_usuario() {
     seguir = confirm("¿Quieres continuar?");
     }
 }
+
+function pedir_datos_usuario() {
+    let edad = prompt("Por favor, introduce tu edad:");
+    let nombre = prompt("Por favor, introduce tu nombre:");
+    let ciudad = prompt("Por favor, introduce tu ciudad:");
+    let direccion = prompt("Por favor, introduce tu dirección:");
+    let telefono = prompt("Por favor, introduce tu teléfono:");
+    let edadElevada = Math.pow(edad, 5);
+
+    if (edadElevada == telefono || ciudad.toLowerCase() === "mairena del alcor") {
+        alert("¡Enhorabuena, " + nombre + "!");
+    } else {
+        alert("Gracias por proporcionar tus datos, " + nombre + ".");
+    }
+
+}
+
+function contar_cifras() {
+    let numero = prompt("Por favor, introduce un número:");
+    let contador = 0;
+    for (let i = 0; numero!=1 ; i++) {
+        numero= Math.floor (numero/10);
+        contador++;
+    }
+    console.log("El número " + numero + " tiene " + contador + " cifras.");
+}
